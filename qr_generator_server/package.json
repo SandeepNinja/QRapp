@@ -2,9 +2,9 @@
   "name": "qr_generator_server",
   "version": "1.0.0",
   "description": "This is a server for QR code generator client side application",
-  "main": "index.js",
+ "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "author": "SandeepNinja",
   "license": "ISC",
