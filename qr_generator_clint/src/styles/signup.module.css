@@ -1,0 +1,67 @@
+.backGround {
+    /* border: 2px solid red; */
+    display: flex;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .OuterContainer {
+    width: 400px;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+  }
+  @media (max-width: 630px) {
+    .OuterContainer{
+        width: calc(100vw - 12em); /* 100% viewport width minus the combined horizontal padding and margin */
+        min-width: 166px;
+    }
+}
+  @media (max-width: 500px) {
+    .OuterContainer{
+        width: calc(100vw - 8em); /* 100% viewport width minus the combined horizontal padding and margin */
+        min-width: 166px;
+        padding: 1em;
+        margin: 1em;
+    }
+}
+  
+  .heading {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  form div {
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-between;
+  }
+  
+  form button {
+    padding: 5px 20px;
+    border-radius: 1em;
+    margin: 0.5em;
+  }
+
+  .inputcss {
+    width: 35%;
+    margin: 0px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.inputcss:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 520px){
+
+}
+  

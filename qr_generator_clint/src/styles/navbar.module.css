@@ -1,0 +1,128 @@
+.navOuter {
+  background:linear-gradient(0.25turn,rgb(48,79,254),rgb(128,216,255));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+.logoName {
+  display: flex;
+  align-items: center;
+}
+.logoName img {
+  margin: 5px;
+}
+
+/* Nav right container */
+.navRightContainer {
+  display: flex;
+  align-items: center;
+}
+.navRightContentToggle {
+  display: flex;
+}
+
+ul {
+  margin: 0px;
+  display: flex;
+  list-style: none;
+}
+li {
+  padding: 0px 5px;
+}
+
+/* menu toggle  */
+
+.MenuToogle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+}
+.menuTopBar {
+  left: 15%;
+  top: 20%;
+  transition: all 0.5s;
+}
+.bar {
+  width: 40px;
+  height: 5px;
+  background-color: darkslategray;
+  border-radius: 10px;
+  position: absolute;
+}
+.menuMiddleBar {
+  left: 15%;
+  top: 40%;
+  transition: all 0.5s;
+}
+.menuBottomBar {
+  left: 15%;
+  top: 60%;
+  transition: all 0.5s;
+}
+
+/* Menu toggle active */
+.navRightContentToggleActive {
+  /* display: block; */
+  position: absolute;
+  top: 80px;
+}
+.navDropDownActive {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0px;
+  /* width: 200px; */
+  align-items: center;
+  /* list-style: none; */
+  background-color: gray;
+  padding: 0px;
+  /* justify-content: center; */
+}
+.navDropDownActive li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 200px;
+  /* border-bottom: 1px dashed black; */
+}
+.menuMiddleBarActive {
+  display: none;
+  /* width: 0px; */
+}
+.menuTopBarActive {
+  transform: rotate(45deg);
+  top: 40%;
+}
+.menuBottomBarActive {
+  transform: rotate(-45deg);
+  top: 40%;
+}
+.link{
+  text-decoration: none;
+  color: black;
+  margin: 0px 5px;
+}
+.link:hover{
+  /* color: blue; */
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+
+/* Media Quary */
+
+@media only screen and (max-width: 600px) {
+  .navRightContentToggle {
+    display: none;
+  }
+  .navRightContentToggleActive {
+    display: block;
+  }
+  .MenuToogle {
+    display: block;
+  }
+}

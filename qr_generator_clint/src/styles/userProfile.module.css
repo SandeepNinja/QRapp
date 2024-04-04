@@ -1,0 +1,75 @@
+.backGround{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outerContainer{
+    width: 400px;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+}
+@media (max-width: 630px) {
+    .outerContainer{
+        width: calc(100vw - 15em); /* 100% viewport width minus the combined horizontal padding and margin */
+        min-width: 166px;
+    }
+}
+@media (max-width: 500px) {
+    .outerContainer{
+        width: calc(100vw - 10em); /* 100% viewport width minus the combined horizontal padding and margin */
+        min-width: 166px;
+    }
+}
+@media (max-width: 400px) {
+    .outerContainer{
+        width: calc(100vw - 8em); /* 100% viewport width minus the combined horizontal padding and margin */
+        min-width: 166px;
+    }
+}
+.avatar{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.miniContainer{
+    display: flex;
+    margin: 10px 0px;
+    /* justify-content: space-between; */
+}
+.miniContainer label{
+    width: 40%;
+    text-align: left;
+}
+.miniContainer input{
+    width: 60%;
+    text-align: left;
+}
+.miniContainer div{
+    width: 60%;
+    text-align: left;
+    word-break: break-all;
+}
+
+.inputcss {
+    width: 35%;
+    margin: 0px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.inputcss:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.contentContainer{
+    margin-bottom: 40px;
+}
