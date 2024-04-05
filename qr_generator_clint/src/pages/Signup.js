@@ -14,6 +14,7 @@ const Signup = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [buttonDisabled, setButtonDisabled] = useState(false);
     const [secondsRemaining, setSecondsRemaining] = useState(0);
+    const [loading, setLoading] = useState(false);
     const { addToast } = useToasts();
     const KRYPTA_KEY = process.env.REACT_APP_KRYPTA_KEY;
     const history = useNavigate();
@@ -30,6 +31,7 @@ const Signup = () => {
 
     const handleSubmmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         console.log("handle submit");
         if (!name || !email || !password || !confirmPassword || !otp) {
             addToast("Fill all the fields", { appearance: 'error' });
@@ -60,6 +62,7 @@ const Signup = () => {
             console.log("Error:",error)
             addToast(error.message, { appearance: 'error' });
         }
+        setLoading(false);
     };
 
     const sendOTP = async (e) => {
@@ -128,7 +131,7 @@ const Signup = () => {
                         </div>
 
                     {/* Submit button */}
-                    <button type="submit">Submit</button>
+                    <button type="submit" disabled={loading} >{loading?"Submitting...":"Submit"}</button>
                 </form>
                 {/* Link to login */}
                 <Link to="/login">
