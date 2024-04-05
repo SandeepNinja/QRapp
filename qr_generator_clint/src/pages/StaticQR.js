@@ -83,7 +83,7 @@ function StaticQR() {
             {textValue}
           </div>
           <QRCode value={value} className={styles.QRCodeImage} />
-          // {value && <h6 style={{ color: "gray" }}>{value}</h6>}
+        {/* {value && <h6 style={{ color: "gray" }}>{value}</h6>} */}
         </div>
         <button onClick={htmlToImageConvert}>Download Image</button>
       </div>
