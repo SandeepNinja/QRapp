@@ -14,6 +14,7 @@ const Login = () => {
   const history = useNavigate();
   const auth = useAuth();
   const { addToast } = useToasts();
+  const [loading, setLoading] = useState(false);
   const KRYPTA_KEY = process.env.REACT_APP_KRYPTA_KEY;
 
   const handleSubmmit = async (e) => {
@@ -79,7 +80,7 @@ const Login = () => {
               />
             </div>
 
-            <button type="submit">Login</button>
+            <button type="submit" disabled={loading} >{loading?"Logging...":"Login"}</button>
           </form>
           <Link to="/forget">
             <div> Forget Password</div>
