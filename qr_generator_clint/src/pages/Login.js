@@ -18,6 +18,7 @@ const Login = () => {
   const KRYPTA_KEY = process.env.REACT_APP_KRYPTA_KEY;
 
   const handleSubmmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     if (!email || !password) {
       // console.log("fill all the fields");
@@ -48,7 +49,7 @@ const Login = () => {
         appearance: 'error',
       });
     }
-   
+   setLoading(false);
   };
 
   if (auth.user) {
