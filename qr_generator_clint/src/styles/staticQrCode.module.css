@@ -100,6 +100,9 @@
   /* margin: 10px; */
   /* padding: 20px; */
 }
+.link{
+  dislay:none;
+}
 
 @media (max-width: 630px) {
   .basicQRBage {
@@ -130,10 +133,23 @@
   h6 {
     margin: 1rem;
   }
+  
 }
 
 @media (max-width: 630px) {
   .QRCodeImage {
     height: 60vw;
+  }
+  .link{
+    display: block;
+    text-align: -webkit-center;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .ribbon{
+    color: black;
+  /* width: 50%; */
+  height: 48px;
+  align-content: center; 
   }
 }
