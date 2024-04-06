@@ -44,6 +44,9 @@ function StaticQR() {
 
   return (
     <div className={styles.basicQRBage}>
+              <Link to="/dynamicqr" className={styles.link}>
+                <marquee direction="right" behavior="alternate"  className={styles.ribbon}>For Multi URL Dynamic QR click here...</marquee >
+              </Link>
       <div className={styles.basicQRLeft}>
         <div className={`${styles.logo} ${styles.miniContainer}`}>
           <label>Logo</label>
